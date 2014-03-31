@@ -57,7 +57,6 @@ function parseLess (code, cb) {
     paths: [__dirname + '/fixtures']
   });
   parser.parse(code, function (err, tree) {
-    console.log(err)
     cb(err, tree.toCSS());
   });
 }
