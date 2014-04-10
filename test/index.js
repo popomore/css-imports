@@ -19,7 +19,17 @@ describe('css-imports', function() {
       {
         string: '@import url("c");',
         path: 'c',
-        index: 50
+        index: 51
+      },
+      {
+        string: '@import "d"',
+        path: 'd',
+        index: 69
+      },
+      {
+        string: '@import  \'e\';',
+        path: 'e',
+        index: 81
       }
     ]);
   });
@@ -46,6 +56,10 @@ describe('css-imports', function() {
         string: '@import url("bar.css");',
         path: 'bar.css',
         index: 0
+      }, {
+        string: '@import "base";',
+        path: 'base',
+        index: 24
       }]);
       done();
     });

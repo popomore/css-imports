@@ -12,9 +12,7 @@ $ npm install css-imports -g
 
 ## Usage
 
-
-
-Css file a.css, **Note: not support `@import "b.css"` which will be confused with css preprocessors.**
+Css file a.css
 
 ```
 @import url("./b.css");
