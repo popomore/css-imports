@@ -30,6 +30,11 @@ describe('css-imports', function() {
         string: '@import  \'e\';',
         path: 'e',
         index: 81
+      },
+      {
+        string: '@import  url(f);',
+        path: 'f',
+        index: 95
       }
     ]);
   });

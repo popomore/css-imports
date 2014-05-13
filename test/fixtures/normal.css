@@ -8,3 +8,4 @@ body {background: red;}
 @import url("c");
 @import "d"
 @import  'e';
+@import  url(f);
