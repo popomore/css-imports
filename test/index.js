@@ -19,22 +19,22 @@ describe('css-imports', function() {
       {
         string: '@import url("c");',
         path: 'c',
-        index: 51
+        index: 58
       },
       {
         string: '@import "d"',
         path: 'd',
-        index: 69
+        index: 76
       },
       {
         string: '@import  \'e\';',
         path: 'e',
-        index: 81
+        index: 88
       },
       {
         string: '@import  url(f);',
         path: 'f',
-        index: 95
+        index: 102
       }
     ]);
   });

@@ -1,5 +1,7 @@
 'use strict';
 
+var stripComments = require('strip-comments');
+
 module.exports = imports;
 
 function imports(str, fn) {
@@ -9,7 +11,7 @@ function imports(str, fn) {
   var ret = [];
   var m;
 
-  str = removeComment(str);
+  str = stripComments.block(str);
   while (m = re.exec(str)) {
     ret.push({
       string: m[0],
@@ -27,8 +29,4 @@ function map(str, fn) {
   });
 
   return str;
-}
-
-function removeComment(str) {
-  return str.replace(/\/\*[\S\s]*?\*\//g, '');
 }

@@ -1,6 +1,11 @@
 @import url('./b.css');
 
-body {background: red;}
+body {
+  /*
+  @import "f"
+  */
+  background: red;
+}
 
 /*
   @import url("comment");

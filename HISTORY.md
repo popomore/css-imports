@@ -2,6 +2,10 @@
 
 ---
 
+## 0.3.0
+
+use strip-comments
+
 ## 0.2.1
 
 url() can ignore quote

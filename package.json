@@ -3,7 +3,9 @@
   "version": "0.2.1",
   "description": "find all @import in css",
   "main": "index",
-  "dependencies": {},
+  "dependencies": {
+    "strip-comments": "~0.1.6"
+  },
   "devDependencies": {
     "coveralls": "~2.8.0",
     "istanbul": "~0.2.6",
