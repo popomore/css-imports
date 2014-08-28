@@ -35,6 +35,11 @@ describe('css-imports', function() {
         string: '@import  url(f);',
         path: 'f',
         index: 102
+      },
+      {
+        string: '@import  url(./base/amui.css);',
+        path: './base/amui.css',
+        index: 119
       }
     ]);
   });

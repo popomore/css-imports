@@ -2,6 +2,10 @@
 
 ---
 
+## 0.3.1
+
+fix @import without quote
+
 ## 0.3.0
 
 use strip-comments

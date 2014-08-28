@@ -7,7 +7,7 @@ module.exports = imports;
 function imports(str, fn) {
   if (str instanceof Buffer) str = str.toString();
   if (fn) return map(str, fn);
-  var re = /@import *(?:url\(['"]?([^'"]+)['"]?\)|['"]([^'"]+)['"]);?/g;
+  var re = /@import *(?:url\(['"]?([^'")]+)['"]?\)|['"]([^'"]+)['"]);?/g;
   var ret = [];
   var m;
 
